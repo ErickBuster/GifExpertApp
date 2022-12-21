@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg, #ff216d, #2196f3);
+    padding: 3rem 1rem;
+}
+form{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+form .inputBox{
+    width: 600px;
+    margin: 1rem 2rem 1.5rem;
+}
+.inputBox input{
+    width: 100%;
+    background-color: #221;
+    color: #aaa;
+    outline: none;
+    text-align: center;
+    border: none;
+    padding: .75rem 2rem;
+    border-radius: .25rem;
+    letter-spacing: 0.1rem;
+    font-size: 0.75rem;
+    box-shadow: none;
+}
+.inputBox input:focus{
+    color: #fff;
+}
+.btnAddCategorie{
+    position: relative;
+    width: 500px;
+    margin: 1rem 2rem 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+.btnAddCategorie button{
+    cursor: pointer;
+    background-color: #2196f3;
+    border: none;
+    outline: none;
+    color: #aaa;
+    padding: .25rem 2rem;
+    border-radius: .25rem;
+    transition: 0.5s all;
+}
+.btnAddCategorie button:hover{
+    transform: scale(1.1);
+    color: #eee;
+}
+.CardCategory{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem 2rem;
+}
+.CardCategory h2{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-weight: 700;
+}
+.CardCategory .CardsContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    column-gap: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem 0.5rem;
+}
+.CardCategory .CardsContent .GiftCard{
+    width: 450px;
+    padding: 0.5rem;
+    background: linear-gradient(90deg, #2196f3, #999);
+    cursor: pointer;
+    margin: 1rem 0;
+    border-radius: .75rem;
+}
+.CardCategory .CardsContent .GiftCard p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.15rem;
+    font-weight: 500;
+    padding: 1rem;
+}
+.CardCategory .CardsContent .GiftCard img{
+    width: 100%;
+    border-radius: .75rem;
+    transition: 0.5s all;
+}
+.CardCategory .CardsContent .GiftCard:hover img{
+    transform: scale(1.1);
+}
